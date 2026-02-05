@@ -26,15 +26,15 @@ PojavLauncher 已于 2025 年 5 月 17 日宣布停更
 
 在手机上的牛蛙助手中导入 ipa 文件
 
-![](../_assets/1.PNG)
+![](../_assets/pojav-ios/1.png)
 
 点击签名进行自签 (刚开始用自签会被封号，不会很严重修改密码就好了，自签只有一周的使用时间，过了时间要重新签名)
 
-![](../_assets/2.PNG)
+![](../_assets/pojav-ios/2.png)
 
 点击进行安装
 
-![](../_assets/3.PNG)
+![](../_assets/pojav-ios/3.png)
 
 ### 启动 PojavLauncher
 
@@ -44,14 +44,14 @@ PojavLauncher 已于 2025 年 5 月 17 日宣布停更
 
 安装完之后若点击程序出现未受信任的提示
 
-![](../_assets/trollstone_i.png)
+![](../_assets/pojav-ios/trollstone_i.png)
 
 请打开设置 → 通用 → VPN 与设备管理，
 点击对应的配置描述文件信任它
 
 若牛蛙提示下图，就按它说的打开牛蛙的 VPN
 
-![](../_assets/4.PNG)
+![](../_assets/pojav-ios/4.png)
 
 ## 方法二：使用 TrollStore
 
@@ -62,7 +62,7 @@ PojavLauncher 已于 2025 年 5 月 17 日宣布停更
 :::
 
 点击查看 [TrollStore 的安装流程](https://ios.cfw.guide/installing-trollstore/)
-![](../_assets/trollstone_v.png)
+![](../_assets/pojav-ios/trollstone_v.png)
 
 <details>
   <summary>各苹果机型对应的 TrollStore 安装方法</summary>
@@ -120,7 +120,7 @@ PojavLauncher 已于 2025 年 5 月 17 日宣布停更
 </details>
 
 总之，当你 ~~终于~~ 历经千辛万苦安装完 TrollStore 之后，你的内心可能痛苦，可能舒畅；但不管怎么样，最痛苦的过程结束了，后面的 Pojav 安装将会异常轻松。
-![](../_assets/troll-icon.jpg)
+![](../_assets/pojav-ios/troll-icon.jpg)
 
 现在你应该能看见这个图标了。
 
@@ -133,13 +133,13 @@ PojavLauncher 已于 2025 年 5 月 17 日宣布停更
 
 下载完 Pojav 安装包后，我们来到 TrollStore 里面。
 
-![](../_assets/troll-idid.PNG)
+![](../_assets/pojav-ios/troll-idid.png)
 
 咱们要打开 ldid，以确保能正常安装没有签名的安装包。
 
 然后回到主界面，点击右上角加号，选择你刚刚下载的 tipa 文件，点击，然后就会安装，安装完之后差不多是这样的。
 
-![](../_assets/troll-ui.PNG)
+![](../_assets/pojav-ios/troll-ui.png)
 
 ~~(你不用管 DolphiniOS 干什么的，这是用来玩老游戏的模拟器)~~
 

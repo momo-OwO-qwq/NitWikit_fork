@@ -26,8 +26,8 @@ title: Invero
 
 :::note
 
-`GitHub` https://github.com/Cubic-Project/Invero
+`GitHub` https://github.com/iiabc/Invero
 
-`文档` https://invero.8aka.org
+`文档` https://invero.hhhhhy.kim/
 
 :::
