@@ -6,7 +6,7 @@ title: 概述
 
 ### 手机运行 Java
 
-目前有两种主流方案：Pojav Launcher 和 Fold Craft Launcher，其中后者对于中国用户更加友好，推荐使用
+目前基本上有两种主流方案：Amethyst launcher 和 Fold Craft Launcher，其中后者对于中国用户更加友好，推荐使用
 
 ### Geyser 转换
 
