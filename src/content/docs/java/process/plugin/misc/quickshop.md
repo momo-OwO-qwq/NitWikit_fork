@@ -67,11 +67,13 @@ title: 商店 - QuickShop
 
 `Modrinth` https://modrinth.com/plugin/quickshop-hikari
 
-`MineBBS` https://www.minebbs.com/resources/.11340
+`MineBBS` https://www.minebbs.com/resources/.15336
 
 `GitHub` https://github.com/QuickShop-Community/QuickShop-Hikari
 
 `文档` https://quickshop-community.github.io/QuickShop-Hikari-Documents
+
+`官网` https://quickshophikari.org/
 
 :::
 
