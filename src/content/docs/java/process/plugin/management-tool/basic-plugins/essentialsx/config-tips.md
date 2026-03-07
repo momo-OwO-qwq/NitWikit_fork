@@ -122,7 +122,7 @@ kit: tools
 
 ## EssentialsX Chat
 
-注意：你需要安装 EssentialsX Chat 才可以使用，推荐用别的聊天插件...
+注意：你需要安装 EssentialsX Chat 才可以使用，推荐用别的聊天插件……
 
 ```yaml
 format: "<{DISPLAYNAME}> {MESSAGE}"
@@ -132,12 +132,12 @@ format: "<{DISPLAYNAME}> {MESSAGE}"
 
 ## EssentialsX Protect
 
-注意：你需要安装 EssentialsX Protect 才可以使用，同样推荐用别的插件...
+注意：你需要安装 EssentialsX Protect 才可以使用，同样推荐用别的插件……
 
 太多东西了，自己看着调。
 
 ## EssentialsX AntiBuild
 
-注意：你需要安装 EssentialsX AntiBuild 才可以使用，同样推荐用别的插件...
+注意：你需要安装 EssentialsX AntiBuild 才可以使用，同样推荐用别的插件……
 
 太多东西了，自己看着调。

@@ -10,11 +10,11 @@ title: kit 礼包
 
 ![](_assets/kit_1.png)
 
-他会将你背包中所有物品保存到这个 kit 礼包中
+他会将你背包中所有物品保存到这个 kit 礼包中。
 
-值得一提的是，如果冷却写 -1，那么这个礼包只能被领取一次
+值得一提的是，如果冷却写 -1，那么这个礼包只能被领取一次。
 
-可用于制作新手礼包
+可用于制作新手礼包。
 
 ## 获得礼包
 
@@ -26,13 +26,13 @@ title: kit 礼包
 
 ### 权限
 
-普通玩家需要 `essentials.kit` 才可使用礼包功能
+普通玩家需要 `essentials.kit` 才可使用礼包功能。
 
 但只给 `essentials.kit` 会提示：
 
 ![](_assets/kit_3.png)
 
-是的，除了 `essentials.kit` 我们还需要给予 `essentials.kits.<kit名字>` 玩家才能领取
+是的，除了 `essentials.kit` 我们还需要给予 `essentials.kits.<kit名字>` 玩家才能领取。
 
 ## 删除礼包
 
@@ -48,7 +48,7 @@ title: kit 礼包
 
 ### kit 执行命令
 
-是的，你能在里面写命令
+是的，你能在里面写命令：
 
 ```yaml
 iloveyizhan:

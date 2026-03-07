@@ -17,7 +17,7 @@ title: config.yml
 # 查看最新的默认配置请访问 https://git.io/JG4z1
 
 # 如果您想在此文档中使用特殊字符（如重音字母），必须将文件保存为 UTF-8 格式，而不是 ANSI。
-# 如果 Essentials 加载时出现错误，请确保：
+# 如果 EssentialsX 加载时出现错误，请确保：
 #  - 没有制表符：YAML 只允许使用空格
 #  - 缩进正确：YAML 层次结构完全基于缩进
 #  - 文本中的所有撇号都已"转义"：例如，如果要写"don't"，请改写为"don''t"（注意双撇号）
@@ -65,12 +65,12 @@ hide-displayname-in-vanish: true
 # 如果您有任何其他修改玩家显示名称的插件，请禁用此选项。
 change-displayname: true
 
-# 此选项将使 Essentials 在 Tab 补全 Essentials 命令时显示玩家的显示名称而不是用户名。
+# 此选项将使 EssentialsX 在 Tab 补全 EssentialsX 命令时显示玩家的显示名称而不是用户名。
 # 如果您的 Tab 补全包含前缀和后缀，请将此选项设置为 false。
 change-tab-complete-name: false
 
-# 当不使用 EssentialsChat.jar 时，强制 Essentials 将权限插件的前缀和后缀添加到显示名称。
-# 如果使用了 EssentialsChat.jar，此设置将被忽略，默认为 true。
+# 当不使用 EssentialsX Chat.jar 时，强制 EssentialsX 将权限插件的前缀和后缀添加到显示名称。
+# 如果使用了 EssentialsX Chat.jar，此设置将被忽略，默认为 true。
 # 上面的 'change-displayname' 值必须为 true。
 # 除非您知道自己在做什么，否则不要编辑此设置！
 #add-prefix-suffix: false
@@ -90,7 +90,7 @@ change-tab-complete-name: false
 #add-suffix-in-playerlist: true
 
 # 如果传送目标不安全，是否应该将玩家传送到最近的安全位置？
-# 如果设置为 true，Essentials 将尝试将玩家传送到接近预期目标的位置。
+# 如果设置为 true，EssentialsX 将尝试将玩家传送到接近预期目标的位置。
 # 如果设置为 false，尝试传送到不安全位置将被取消并显示警告。
 teleport-safety: true
 
@@ -107,7 +107,7 @@ force-safe-teleport-location: false
 is-water-safe: false
 
 # 如果玩家有任何乘客，传送将失败。是否应该在传送前让乘客下马？
-# 如果设置为 true，Essentials 将在传送前让玩家的乘客下马。
+# 如果设置为 true，EssentialsX 将在传送前让玩家的乘客下马。
 # 如果设置为 false，尝试传送将被取消并显示警告。
 teleport-passenger-dismount: true
 
@@ -168,26 +168,26 @@ notify-no-new-mail: true
 # 对于邮件流量高的服务器很有用。
 notify-player-of-mail-cooldown: 60
 
-# 当命令与另一个插件冲突时，Essentials 默认会尝试强制让其他插件优先。
-# 将命令添加到此列表将告诉 Essentials 不要将命令"让给"其他插件。
+# 当命令与另一个插件冲突时，EssentialsX 默认会尝试强制让其他插件优先。
+# 将命令添加到此列表将告诉 EssentialsX 不要将命令"让给"其他插件。
 # 在这种状态下，哪个插件"获胜"可能看起来几乎是随机的。
 #
-# 如果您有两个插件具有相同的命令并希望强制 Essentials 接管，您必须设置别名。
-# 要强制 Essentials 处理 '/god'，请在服务器根文件夹中的 'commands.yml' 文件中将 'god' 别名为 'essentials:god $1-'。
+# 如果您有两个插件具有相同的命令并希望强制 EssentialsX 接管，您必须设置别名。
+# 要强制 EssentialsX 处理 '/god'，请在服务器根文件夹中的 'commands.yml' 文件中将 'god' 别名为 'essentials:god $1-'。
 # 更多信息请参见 https://breezewiki.com/bukkit/wiki/Commands.yml#aliases。
 overridden-commands:
     #- god
     #- info
 
-# 在此禁用命令将阻止 Essentials 处理该命令；这不会影响命令冲突。
+# 在此禁用命令将阻止 EssentialsX 处理该命令；这不会影响命令冲突。
 # 您不需要禁用其他插件使用的命令，因为它们会自动获得优先权。
 # 参见 https://breezewiki.com/bukkit/wiki/Commands.yml#aliases 将命令映射到其他插件。
 disabled-commands:
     #- nick
     #- clear
 
-# Essentials 是否应显示详细的命令用法。
-# 如果设置为 false，Essentials 将把所有用法合并为一条用法消息。
+# EssentialsX 是否应显示详细的命令用法。
+# 如果设置为 false，EssentialsX 将把所有用法合并为一条用法消息。
 verbose-command-usages: true
 
 # 这些命令将显示给启用了 SocialSpy 的玩家。
@@ -233,23 +233,23 @@ socialspy-uses-displaynames: true
 # 以下世界设置监听玩家切换世界时的情况。
 # 如果您使用另一个插件来控制速度和飞行，您应该将这些设置为 false。
 
-# 当玩家切换世界时，Essentials 是否应重置他们的飞行状态？
+# 当玩家切换世界时，EssentialsX 是否应重置他们的飞行状态？
 # 如果玩家没有 'essentials.fly' 权限，这将禁用飞行。
 world-change-fly-reset: true
 
 # 从 1.17 开始，Minecraft 不再在玩家切换世界时保留玩家的能力。
-# 将此设置为 true 将使 Essentials 在玩家切换世界时保留飞行状态。
+# 将此设置为 true 将使 EssentialsX 在玩家切换世界时保留飞行状态。
 # 这只有在玩家拥有 'essentials.fly' 权限时才有效。
 world-change-preserve-flying: true
 
-# 当玩家切换世界时，Essentials 是否应根据其权限重置其速度？
+# 当玩家切换世界时，EssentialsX 是否应根据其权限重置其速度？
 # 如果玩家没有 'essentials.speed' 权限，这会将玩家的速度重置为默认值。
 # 如果玩家没有 'essentials.speed.bypass' 权限，其速度将被重置为
 # 下面 'max-walk-speed' 和 'max-fly-speed' 中指定的最大值。
 world-change-speed-reset: true
 
 # 当玩家被禁言时，这些命令将被禁用。
-# Essentials 默认已禁用 Essentials 消息命令。
+# EssentialsX 默认已禁用 EssentialsX 消息命令。
 # 它只关心根命令，而不关心之后的参数（它将 '/f chat' 视为与 '/f' 相同）。
 # 从 '*' 中删除 # 以在禁言时禁用所有命令。
 mute-commands:
@@ -348,7 +348,7 @@ player-commands:
 
 # 使用此选项强制使用基于超级权限的权限处理器，无论检测到安装的权限插件如何。
 # 如果您希望为自定义权限插件使用基于超级权限的权限（带通配符），这很有用。
-# 如果您希望使用上面 'player-commands' 部分的 Essentials 内置权限，请将此设置为 false。
+# 如果您希望使用上面 'player-commands' 部分的 EssentialsX 内置权限，请将此设置为 false。
 use-bukkit-permissions: true
 
 # 启用此选项时，一次性使用工具包（即延迟 < 0）将
@@ -364,16 +364,16 @@ kit-auto-equip: false
 pastebin-createkit: false
 
 # 确定 /createkit 是否将使用 NBT 物品序列化重生工具包。
-# 如果为 true，/createkit 将以 NBT 形式存储物品。否则，它将使用 Essentials 的人类可读物品格式。
+# 如果为 true，/createkit 将以 NBT 形式存储物品。否则，它将使用 EssentialsX 的人类可读物品格式。
 # 通过使用 NBT 序列化，/createkit 可以存储带有复杂元数据的物品，如潜影盒和带有自定义属性的武器。
 # 警告：此选项仅适用于 1.15.2+ Paper 服务器，并且会绕过其他插件（如 Magic）的任何自定义序列化器。
 # 警告：使用启用此选项的 /createkit 创建工具包时，您将无法使用这些工具包物品降级服务器。
-# 此选项仅影响 /createkit - 您仍可以使用 Essentials 的人类可读物品格式在 'kits.yml' 中手动创建工具包。
+# 此选项仅影响 /createkit - 您仍可以使用 EssentialsX 的人类可读物品格式在 'kits.yml' 中手动创建工具包。
 use-nbt-serialization-in-createkit: false
 
 # 要启用标牌，请删除 # 符号。要禁用所有标牌，请注释或删除每个标牌。
 # 有关如何使用这些标牌的说明，请参见 https://wiki.ess3.net/wiki/Sign_Tutorial。
-# 当启用任何标牌类型时，Essentials 的彩色标牌支持将被启用。
+# 当启用任何标牌类型时，EssentialsX 的彩色标牌支持将被启用。
 # 注意：'color' 不是实际的标牌类型；它使标牌在给予正确权限时能够使用颜色代码。
 enabledSigns:
     #- color
@@ -402,7 +402,7 @@ enabledSigns:
     #- time
     #- weather
 
-# 这定义了每个玩家每秒可以与 Essentials 标牌交互多少次。
+# 这定义了每个玩家每秒可以与 EssentialsX 标牌交互多少次。
 # 值应在 1-20 之间，20 表示几乎没有延迟保护。
 # 较低的数字会减少延迟的可能性，但可能会让玩家感到烦恼。
 sign-use-per-second: 4
@@ -412,12 +412,12 @@ sign-use-per-second: 4
 # 放置的标牌交互。
 allow-old-id-signs: false
 
-# Essentials 不应保护的标牌名称列表。当其他插件提供 Essentials 也提供的标牌时，
-# 但 Essentials 覆盖了它，此功能特别有用。
-# 例如，如果插件提供 [kit] 标牌，而您希望使用它们的而不是 Essentials 的，
-# 那么只需在下面添加 'kit'，Essentials 就不会保护它。
+# EssentialsX 不应保护的标牌名称列表。当其他插件提供 EssentialsX 也提供的标牌时，
+# 但 EssentialsX 覆盖了它，此功能特别有用。
+# 例如，如果插件提供 [kit] 标牌，而您希望使用它们的而不是 EssentialsX 的，
+# 那么只需在下面添加 'kit'，EssentialsX 就不会保护它。
 #
-# 更多信息请参见 https://github.com/drtshock/Essentials/pull/699。
+# 更多信息请参见 https://github.com/drtshock/EssentialsX/pull/699。
 unprotected-sign-names:
     #- kit
 
@@ -464,14 +464,14 @@ debug: false
 # 更多信息，请访问 https://essentialsx.net/wiki/Locale.html
 #locale: en
 
-# 在发送消息时，Essentials 是否应使用玩家的语言而不是服务器的语言？
+# 在发送消息时，EssentialsX 是否应使用玩家的语言而不是服务器的语言？
 # 如果您想为服务器和玩家使用不同的语言，这很有用。
 # 例如，如果您的服务器设置为英语而玩家说法语，您可以将此设置为 true。
-# 然后 Essentials 会向玩家发送法语消息，而控制台中的消息将保持英语。
+# 然后 EssentialsX 会向玩家发送法语消息，而控制台中的消息将保持英语。
 # 如果玩家的语言未知，将使用服务器的语言（或上面定义的语言）。
 per-player-locale: false
 
-# 更改 Essentials 消息中使用的默认主要和次要颜色。
+# 更改 EssentialsX 消息中使用的默认主要和次要颜色。
 # 某些消息可能使用自定义颜色，必须在相应的消息文件中进行编辑。
 # 有关自定义消息的更多信息，请参见 https://essentialsx.net/wiki/Locale.html
 message-colors:
@@ -504,12 +504,12 @@ disable-item-pickup-while-afk: false
 # 此设置控制玩家在交互时是否被标记为活跃。
 cancel-afk-on-interact: true
 
-# 当玩家移动时，Essentials 是否应自动移除 AFK 状态？
+# 当玩家移动时，EssentialsX 是否应自动移除 AFK 状态？
 # 无论此设置如何，玩家在聊天或使用命令时都会退出 AFK。
 # 禁用此功能以减少服务器延迟。
 cancel-afk-on-move: true
 
-# 当玩家发送聊天消息时，Essentials 是否应自动移除 AFK 状态？
+# 当玩家发送聊天消息时，EssentialsX 是否应自动移除 AFK 状态？
 cancel-afk-on-chat: true
 
 # 当其他玩家尝试睡觉时，是否应忽略 AFK 玩家？
@@ -522,7 +522,7 @@ sleep-ignores-afk-players: true
 # 拥有权限 'essentials.sleepingignored' 的玩家将始终被忽略。
 sleep-ignores-vanished-player: true
 
-# 当玩家 AFK 时，更改其 /list 名称。默认为 none，这意味着 Essentials
+# 当玩家 AFK 时，更改其 /list 名称。默认为 none，这意味着 EssentialsX
 # 不应干扰 AFK 玩家的 /list 名称。
 # 您可以使用颜色代码，{USERNAME} 表示玩家姓名，或 {PLAYER} 表示玩家显示名称。
 afk-list-name: "none"
@@ -535,12 +535,12 @@ broadcast-afk-message: true
 # 您可以在此禁用 Minecraft 死亡消息。
 death-messages: true
 
-# Essentials 应如何处理拥有 'essentials.keepinv' 权限且死亡时携带
+# EssentialsX 应如何处理拥有 'essentials.keepinv' 权限且死亡时携带
 # 消失诅咒物品的玩家？
 # 有效选项为：'keep'、'drop' 和 'delete'。
 vanishing-items-policy: keep
 
-# Essentials 应如何处理拥有 'essentials.keepinv' 权限且死亡时携带
+# EssentialsX 应如何处理拥有 'essentials.keepinv' 权限且死亡时携带
 # 绑定诅咒物品的玩家？
 # 有效选项为：'keep'、'drop' 和 'delete'。
 binding-items-policy: keep
@@ -583,7 +583,7 @@ custom-quit-message: "none"
 # {UPTIME} - 服务器在线时间。
 custom-new-username-message: "none"
 
-# Essentials 是否应使用语言文件中的自定义"服务器已满"消息覆盖原版消息？
+# EssentialsX 是否应使用语言文件中的自定义"服务器已满"消息覆盖原版消息？
 # 设置为 false 以保留原版消息。
 use-custom-server-full-message: true
 
@@ -596,7 +596,7 @@ hide-join-quit-messages-above: -1
 no-god-in-worlds:
     #- world_nether
 
-# 设置为 true 以启用使用 Essentials 命令在世界间传送的每世界权限。
+# 设置为 true 以启用使用 EssentialsX 命令在世界间传送的每世界权限。
 # 这适用于 /world、/back、/tp[a|o|here|all] 但不包括传送点。
 # 使用 'essentials.worlds.<世界名>' 给予某人传送到世界的权限。
 # 这不影响 /home 命令；请使用下面的 'world-home-permissions'。
@@ -624,7 +624,7 @@ unsafe-enchantments: false
 # /tree 和 /bigtree 命令可以从玩家重生树的最大距离（以方块为单位）。
 tree-command-range-limit: 300
 
-# Essentials 是否应在传送监听器中跟踪玩家的前一个位置以便 /back？
+# EssentialsX 是否应在传送监听器中跟踪玩家的前一个位置以便 /back？
 # 如果您将此设置为 true，任何使用传送的插件都将注册前一个位置。
 register-back-in-listener: false
 
@@ -670,19 +670,19 @@ milk-bucket-easter-egg: true
 # 切换是否应在玩家加入时向其发送飞行状态消息。
 send-fly-enable-on-join: true
 
-# 设置为 true 以启用使用 Essentials 命令设置各个世界时间的每世界权限。
+# 设置为 true 以启用使用 EssentialsX 命令设置各个世界时间的每世界权限。
 # 这适用于 /time、/day 和 /night 命令。
 # 使用 'essentials.time.world.<世界名>' 给予某人在世界中设置时间的权限。
 world-time-permissions: false
 
-# 为 Essentials 命令和外部命令指定冷却时间。
+# 为 EssentialsX 命令和外部命令指定冷却时间。
 # 命令不以正斜杠 (/) 开头。例如，不要写 '/msg'，而是写 'msg'。
 #
 # 支持通配符。例如，
 # - '*i*': 50
 # 为所有包含字母"i"的命令添加 50 秒冷却时间。
 #
-# Essentials 支持以插入符号 (^) 开始命令的正则表达式。
+# EssentialsX 支持以插入符号 (^) 开始命令的正则表达式。
 # 例如，要针对以"ban"开头但不是"banip"的命令，使用：
 #  '^ban([^ip])( .*)?': 60 # 60 秒 /ban 冷却时间
 # 注意：如果您有以 ^ 开头的命令，请使用反斜杠 (\) 转义。例如，\^command: 123
@@ -716,7 +716,7 @@ default-enabled-confirm-commands:
     #- pay
     #- clearinventory
 
-# Essentials 应在玩家从监狱释放时将其传送到何处？
+# EssentialsX 应在玩家从监狱释放时将其传送到何处？
 # 设置为 'back' 以将他们传送到被监禁前的先前位置，
 # 'spawn' 将他们发送到出生点，或 'off' 以在释放时禁用传送。
 teleport-when-freed: back
@@ -745,7 +745,7 @@ allow-world-in-broadcastworld: true
 # 只有在使用 Minecraft China 时才应将此更改为 false。
 safe-usermap-names: true
 
-# 当命令方块执行命令时，Essentials 是否应输出日志？
+# 当命令方块执行命令时，EssentialsX 是否应输出日志？
 # 示例：CommandBlock at <x>,<y>,<z> issued server command: /<命令>
 log-command-block-commands: true
 
@@ -756,8 +756,8 @@ max-projectile-speed: 8
 # 拥有 'essentials.itemlore.bypass' 权限的玩家能够绕过此限制。
 max-itemlore-lines: 10
 
-# Essentials 是否应检查更新？
-# 如果设置为 true，当有新版本可用时，Essentials 将显示通知。
+# EssentialsX 是否应检查更新？
+# 如果设置为 true，当有新版本可用时，EssentialsX 将显示通知。
 # 这使用公共 GitHub API，不发送或存储任何识别信息。
 update-check: true
 
@@ -795,7 +795,7 @@ sethome-multiple:
 
 # 控制玩家是否需要 'essentials.home.compass' 权限才能使
 # 玩家的指南针指向其第一个家。
-# 将此设置为 false 将保留 Essentials 的原始行为，即始终
+# 将此设置为 false 将保留 EssentialsX 的原始行为，即始终
 # 更改指南针方向以指向玩家的第一个家。
 compass-towards-home-perm: false
 
@@ -812,7 +812,7 @@ confirm-home-overwrite: false
 # +------------------------------------------------------+ #
 ############################################################
 
-# 更多信息，请访问 https://wiki.ess3.net/wiki/Essentials_Economy
+# 更多信息，请访问 https://wiki.ess3.net/wiki/EssentialsX_Economy
 
 # 您可以通过使用 /setworth 命令和 'worth.yml' 来控制出售给服务器的物品的价值。
 
@@ -902,7 +902,7 @@ sell-multipliers:
 # +------------------------------------------------------+ #
 ############################################################
 
-# 在 Essentials 帮助列表中显示其他插件的命令。
+# 在 EssentialsX 帮助列表中显示其他插件的命令。
 non-ess-in-help: true
 
 # 隐藏玩家没有权限使用的插件。
@@ -921,7 +921,7 @@ hide-permissionless-help: true
 # 更多信息请参见 https://essentialsx.net/wiki/Module-Breakdown.html。
 
 chat:
-    # 如果安装了 Essentials Chat，这设置玩家的聊天将传播多少个方块。设置为 0 表示全局聊天。
+    # 如果安装了 EssentialsX Chat，这设置玩家的聊天将传播多少个方块。设置为 0 表示全局聊天。
     # 拥有 'essentials.chat.spy' 权限的玩家将看到所有内容，无论此设置如何。
     # 拥有 'essentials.chat.shout' 权限的玩家可以通过在消息前加感叹号 (!) 来覆盖此设置。
     # 拥有 'essentials.chat.question' 权限的玩家可以通过在消息前加问号 (?) 来覆盖此设置。
@@ -942,7 +942,7 @@ chat:
     # {MESSAGE} - 聊天消息的内容。
     # {USERNAME} - 发送者的用户名。
     # {DISPLAYNAME} - 发送者的显示名称。
-    # {NICKNAME} - 发送者的 Essentials 昵称。如果发送者没有昵称，则显示用户名。
+    # {NICKNAME} - 发送者的 EssentialsX 昵称。如果发送者没有昵称，则显示用户名。
     # {PREFIX} - 发送者的前缀，由权限插件提供。
     # {SUFFIX} - 发送者的后缀，由权限插件提供。
     # {GROUP} - 发送者的主要组名，由权限插件提供。
@@ -994,7 +994,7 @@ chat:
     # 聊天问题是否应被启用。
     question-enabled: true
 
-    # Essentials 是否应在 1.16.5+ 中使用 Paper 的现代聊天事件系统。
+    # EssentialsX 是否应在 1.16.5+ 中使用 Paper 的现代聊天事件系统。
     # 这是现代聊天功能（如悬停事件和点击事件）所必需的。
     # 如果您在使用聊天事件系统的其他插件时遇到问题，可以禁用此功能。
     # 更改此设置后必须重启服务器。
@@ -1160,14 +1160,14 @@ protect:
         # 更多信息请参见 https://essentialsx.net/wiki/Module-Breakdown.html 和 https://wiki.ess3.net/wiki/AntiBuild。
 
         # 是否应为没有 'essentials.build' 权限的人禁用建筑？
-        # 将此设置为 false 意味着 Essentials AntiBuild 永远不会阻止玩家建筑。
+        # 将此设置为 false 意味着 EssentialsX AntiBuild 永远不会阻止玩家建筑。
         build: true
 
         # 是否应阻止没有 'essentials.build' 权限的人使用物品？
-        # 将此设置为 false 意味着 Essentials AntiBuild 永远不会阻止玩家使用物品。
+        # 将此设置为 false 意味着 EssentialsX AntiBuild 永远不会阻止玩家使用物品。
         use: true
 
-        # 当不允许建筑时，Essentials 是否应向人们发送消息？
+        # 当不允许建筑时，EssentialsX 是否应向人们发送消息？
         warn-on-build-disallow: true
 
     # 您希望对哪些方块类型收到警报？
@@ -1203,7 +1203,7 @@ protect:
 # 更多信息请参见 https://essentialsx.net/wiki/Module-Breakdown.html。
 
 newbies:
-    # Essentials 是否应在有人首次登录时向服务器宣布？
+    # EssentialsX 是否应在有人首次登录时向服务器宣布？
     # {DISPLAYNAME} 将被替换为玩家名称。
     # 设置为 '' 以禁用。
     #announce-format: ''
@@ -1220,15 +1220,15 @@ newbies:
     #kit: ''
     kit: tools
 
-# Essentials 应使用什么优先级来处理重生？
+# EssentialsX 应使用什么优先级来处理重生？
 # 如果您想要原版重生行为，请将此设置为 'none'。
 # 如果您想要世界插件处理重生，请将此设置为 'lowest'。
-# 如果您想要 Essentials Spawn 处理重生，请将此设置为 'high'。
-# 如果您想要强制 Essentials Spawn 处理重生，请将此设置为 'highest'。
+# 如果您想要 EssentialsX Spawn 处理重生，请将此设置为 'high'。
+# 如果您想要强制 EssentialsX Spawn 处理重生，请将此设置为 'highest'。
 # 注意：更改将在服务器重启后才会生效。
 respawn-listener-priority: high
 
-# Essentials 应使用什么优先级来处理加入服务器时的重生？
+# EssentialsX 应使用什么优先级来处理加入服务器时的重生？
 # 可能的值请参见上面的 'respawn-listener-priority'。
 # 注意：更改此设置可能会影响或破坏下面的 'spawn-on-join' 功能。
 # 注意：更改将在服务器重启后才会生效。
@@ -1241,7 +1241,7 @@ respawn-at-home: false
 # 上面的 'respawn-at-home' 设置也必须为 true 才能生效。
 respawn-at-home-bed: true
 
-# 当玩家死亡时，Essentials 是否应尊重他们的重生锚？
+# 当玩家死亡时，EssentialsX 是否应尊重他们的重生锚？
 respawn-at-anchor: false
 
 # 如果已配置，玩家将在随机位置重生而不是其重生点。
