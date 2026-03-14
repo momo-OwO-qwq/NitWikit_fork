@@ -13,7 +13,7 @@ title: config.yml
 ############################################################
 
 # 这是 EssentialsX 的配置文件。
-# 此配置基于 2.21.2 版本。
+# 此配置基于 2.22.0-dev+73-482175e 版本生成。
 # 查看最新的默认配置请访问 https://git.io/JG4z1
 
 # 如果您想在此文档中使用特殊字符（如重音字母），必须将文件保存为 UTF-8 格式，而不是 ANSI。
@@ -241,6 +241,11 @@ world-change-fly-reset: true
 # 将此设置为 true 将使 EssentialsX 在玩家切换世界时保留飞行状态。
 # 这只有在玩家拥有 'essentials.fly' 权限时才有效。
 world-change-preserve-flying: true
+
+# 当玩家切换游戏模式时，EssentialsX 是否应保留他们的飞行状态？
+# 启用后，如果玩家在切换游戏模式时正在飞行，其飞行状态将被保持。
+# 这只有在玩家拥有 'essentials.fly' 权限时才有效。
+gamemode-change-preserve-flying: false
 
 # 当玩家切换世界时，EssentialsX 是否应根据其权限重置其速度？
 # 如果玩家没有 'essentials.speed' 权限，这会将玩家的速度重置为默认值。
@@ -486,10 +491,26 @@ remove-god-on-disconnect: false
 # 设置为 -1 表示无超时。
 auto-afk: 300
 
-# 在此超时（以秒为单位）后，玩家将被踢出服务器。
+# 在此超时（以秒为单位）后，玩家将被踢出服务器
+# 或执行 'afk-timeout-commands' 中的命令。
 # 'essentials.afk.kickexempt' 权限会覆盖此功能。
 # 设置为 -1 表示无超时。
-auto-afk-kick: -1
+auto-afk-timeout: -1
+
+# 当达到上述 'afk-auto-timeout' 定义的阈值时，要执行的命令列表。
+# 如果此列表为空且 'afk-auto-timeout' 未设置为 -1，EssentialsX 将默认
+# 在玩家达到超时阈值时踢出玩家。
+#
+# 警告：您必须在此处包含一个命令，该命令要么将玩家从服务器移除，
+# 要么阻止他们处于 AFK 状态。否则，这些命令将每秒运行一次，
+# 直到玩家不再 AFK！
+#
+# 可用占位符：
+# {USERNAME} - 玩家的用户名。
+# {KICKTIME} - 玩家 AFK 的时间（以分钟为单位）。
+afk-timeout-commands:
+  #- eco take {USERNAME} 10
+  #- kick {USERNAME} You have been kicked for being inactive for {KICKTIME} minutes! You lost $10.
 
 # 如果您希望在玩家 AFK 时冻结他们，请将此设置为 true。
 # 其他玩家或怪物将无法将他们推出 AFK 模式。
@@ -586,6 +607,10 @@ custom-new-username-message: "none"
 # EssentialsX 是否应使用语言文件中的自定义"服务器已满"消息覆盖原版消息？
 # 设置为 false 以保留原版消息。
 use-custom-server-full-message: true
+
+# EssentialsX 是否应使用语言文件中的自定义"您未在此服务器白名单上"消息覆盖原版消息？
+# 设置为 false 以保留原版消息。
+use-custom-whitelist-message: true
 
 # 您可以在玩家数量达到一定限制时禁用加入和退出消息。
 # 当玩家数量低于此数字时，加入/退出消息将始终显示。
@@ -746,8 +771,12 @@ allow-world-in-broadcastworld: true
 safe-usermap-names: true
 
 # 当命令方块执行命令时，EssentialsX 是否应输出日志？
-# 示例：CommandBlock at <x>,<y>,<z> issued server command: /<命令>
+# 示例：CommandBlock at <x>,<y>,<z> issued server command: /<command>
 log-command-block-commands: true
+
+# 当控制台执行命令时，EssentialsX 是否应输出日志？
+# 示例：CONSOLE issued server command: /<command>
+log-console-commands: true
 
 # 设置使用 /fireball 重生的射弹的最大速度。
 max-projectile-speed: 8
@@ -848,6 +877,10 @@ min-money: -10000
 # 启用此功能以记录与购买/销售/交易标牌和销售命令的所有交互。
 economy-log-enabled: false
 
+# 启用此功能以在 trade.log 文件中用 UUID 替换用户名。
+# 如果为 false，将使用用户名而不是 UUID。
+economy-log-uuids: false
+
 # 启用此功能以同时记录来自其他插件通过 Vault 的所有交易。
 # 这可能导致经济日志快速填满，所以应该只在测试目的时启用！
 economy-log-update-enabled: false
@@ -868,6 +901,11 @@ show-zero-baltop: true
 baltop-requirements:
     minimum-balance: 0
     minimum-playtime: 0
+
+# 限制缓存的余额排行榜条目数量。
+# 对于拥有大量玩家的服务器，建议设置此值，因为它可以减少内存使用。
+# 设置为 -1 以禁用限制。
+baltop-entry-limit: -1
 
 # 货币格式，不包括符号。有关符号配置，请参见下面的 'currency-symbol-format-locale'。
 #
@@ -1031,6 +1069,7 @@ protect:
         fireball-fire: false
         fireball-playerdamage: false
         fireball-itemdamage: false
+        windcharge-explosion: false
         witherskull-explosion: false
         witherskull-playerdamage: false
         witherskull-itemdamage: false
