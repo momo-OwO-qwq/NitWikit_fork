@@ -4,43 +4,43 @@ title: 概述
 
 :::danger
 
-大部分付费所谓的高性能核心大概率是假的，如果你真的需要购买，你可以向大佬咨询
+大部分付费所谓的高性能核心大概率是假的，如果你真的需要购买，你可以向大佬咨询。
 
 :::
 
-> 此处仅为部分开服核心
+> 此处仅为部分开服核心。
 
 目前有三类主流的选择：
 
 ## 插件端
 
-点此跳转到 [插件端](/java/start/server-core-choose/plugin/)
+点此跳转到 [插件端](/java/start/server-core-choose/plugin/)。
 
 :::tip
 
-只能安装插件的服务端
+只能安装插件的服务端。
 
 :::
 
 性能较好，是初学者最适合开的服务器，拓展性较强，配置性强，但坏处就是有的插件需自行配置后使用，客户端无需安装 Mod。
 
-个人推荐插件服使用 Purpur，是截止到 2024 年的稳定性和优化最好的选择
+个人推荐插件服使用 Purpur，是截止到 2024 年的稳定性和优化最好的选择。
 
 :::note
 
-此类核心的存档结构有些不同
+此类核心的存档结构有些不同，
 
-如果你是从非 Bukkit 系核心或单人存档迁移，请查看 [Leaves 的迁移文档](https://docs.leavesmc.org/zh_Hans/leaves/guides/migration) (通用所有 Bukkit 插件端)
+如果你是从非 Bukkit 系核心或单人存档迁移，请查看 [Leaves 的迁移文档](https://docs.leavesmc.org/zh_Hans/leaves/guides/migration) (通用所有 Bukkit 插件端)。
 
 :::
 
 ## Mod 端
 
-点此跳转到 [Mod 端](/java/start/server-core-choose/mod/)
+点此跳转到 [Mod 端](/java/start/server-core-choose/mod/)。
 
 :::tip
 
-只能安装 mod 的服务端
+只能安装 mod 的服务端。
 
 :::
 
@@ -54,17 +54,18 @@ title: 概述
 
 :::tip
 
-可以安装插件和 mod 的服务端
+可以安装插件和 mod 的服务端。
 
 :::
 
 :::danger
 
-部分性能不如 mod 端，游戏性丰富，稳定性和报错非常玄学，建议新手不要尝试
+部分性能不如 mod 端，游戏性丰富，稳定性和报错非常玄学，建议新手不要尝试！
 
 :::
 
-混合端常见的有 Catserver；高版本推荐使用 Mohist 或 Arclight，就目前来看，它们的本身稳定性良好，也比纯 Forge 有所优化 (但 mod /插件数量多了之后兼容性问题可能会莫名让人头疼)
+混合端常见的有 Catserver；高版本推荐使用 Mohist 或 Arclight，就目前来看，它们的本身稳定性良好，也比纯 Forge 有所优化 
+（mod /插件数量多了之后兼容性问题可能会莫名让人头疼）。
 
 ## 更换核心
 
@@ -72,17 +73,17 @@ title: 概述
 
 这类操作几乎无感
 
-> 核心只要是同版本的分支基本可以考虑后期再替换
+> 核心只要是同版本的分支基本可以考虑后期再替换，
 >
-> 如使用 Spigot 替换 Paper 或 Purpur 等
+> 如使用 Spigot 替换 Paper 或 Purpur 等。
 
 - **[混合端](/java/start/server-core-choose/hybrid)**
 
-这有待商榷，因为各个端兼容性差异较大
+这有待商榷，因为各个端兼容性差异较大。
 
 - **[Mod 端](/java/start/server-core-choose/mod)**
 
-这几乎不可能，你基本没有可选择的核心
+这几乎不可能，你基本没有可选择的核心。
 
 Mod 服最开始就必须选好核心，也就是 Forge 还是 Fabric 的问题。
 
