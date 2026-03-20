@@ -771,11 +771,11 @@ allow-world-in-broadcastworld: true
 safe-usermap-names: true
 
 # 当命令方块执行命令时，EssentialsX 是否应输出日志？
-# 示例：CommandBlock at <x>,<y>,<z> issued server command: /<command>
+# 示例：CommandBlock at <x>,<y>,<z> issued server command: /<命令>
 log-command-block-commands: true
 
 # 当控制台执行命令时，EssentialsX 是否应输出日志？
-# 示例：CONSOLE issued server command: /<command>
+# 示例：CONSOLE issued server command: /<命令>
 log-console-commands: true
 
 # 设置使用 /fireball 重生的射弹的最大速度。

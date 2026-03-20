@@ -16,7 +16,7 @@ Mod 端的选择一般优先考虑玩法（即主要的玩法 mod），再考虑
 
 ![](_assets/NeoForge.png)
 
-关于 NeoForge 和 Forge 的关系，可以查看 [这篇文章](https://www.bilibili.com/opus/827402209530478597)，
+关于 NeoForge 和 Forge 的关系，可以查看 [这篇文章](https://www.bilibili.com/opus/827402209530478597)。
 
 通常来说，1.21 以上 **可以** 使用 NeoForge。
 
